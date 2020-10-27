@@ -15,7 +15,9 @@ NEWS ARTICLES: https://blog.gdeltproject.org/four-massive-datasets-charting-the-
 
 # Similar Projects by Others
 https://www.kaggle.com/ionlights/knight-hacks-4-climate-change-sentiment-analysis
+
 https://runestone.academy/runestone/books/published/fopp/Projects/sentiment_analysis.html
+
 https://rstudio-pubs-static.s3.amazonaws.com/324881_09cff2f8816247d5b5750f9983abeb57.html#loading-the-data
 
 # Relavent Studies to Look At
