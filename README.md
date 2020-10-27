@@ -6,8 +6,11 @@ https://www.datacamp.com/community/tutorials/simplifying-sentiment-analysis-pyth
 
 # Potentional Data Sets
 http://sciencepolicy.colorado.edu/icecaps/research/media_coverage/index.html
+
 TWEET IDS: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5QCCUU
+
 NEWS ARTICLES: https://blog.gdeltproject.org/a-new-contextual-dataset-for-exploring-climate-change-narratives-6-3m-english-news-urls-with-contextual-snippets-2015-2020/
+
 NEWS ARTICLES: https://blog.gdeltproject.org/four-massive-datasets-charting-the-global-climate-change-news-narrative-2009-2020/
 
 # Similar Projects by Others
