@@ -4,14 +4,10 @@ CMSC320 Final Project: Senitment Analysis of Climate Change on the Web
 # Senitment Analysis in Python
 https://www.datacamp.com/community/tutorials/simplifying-sentiment-analysis-python
 
-# Potentional Data Sets
-http://sciencepolicy.colorado.edu/icecaps/research/media_coverage/index.html
+# Data Set
+Littman, Justin; Wrubel, Laura, 2019, "Climate Change Tweets Ids", https://doi.org/10.7910/DVN/5QCCUU, Harvard Dataverse, V1
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5QCCUU
 
-TWEET IDS: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5QCCUU
-
-NEWS ARTICLES: https://blog.gdeltproject.org/a-new-contextual-dataset-for-exploring-climate-change-narratives-6-3m-english-news-urls-with-contextual-snippets-2015-2020/
-
-NEWS ARTICLES: https://blog.gdeltproject.org/four-massive-datasets-charting-the-global-climate-change-news-narrative-2009-2020/
 
 # Similar Projects by Others
 https://www.kaggle.com/ionlights/knight-hacks-4-climate-change-sentiment-analysis
