@@ -1,5 +1,5 @@
 # arjungandhi521.github.io
-CMSC320 Final Project: Senitment Analysis of Climate Change on the Web
+CMSC320 Final Project: Senitment Analysis of Climate Change on Twitter between 2017 and 2019
 
 # Senitment Analysis in Python
 https://www.datacamp.com/community/tutorials/simplifying-sentiment-analysis-python
