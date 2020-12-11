@@ -4,7 +4,7 @@ Twitter's Climate Tide: An Analysis of Sentiment Towards Climate Change on Twitt
 
 You can go here to view this project without needing to run anything: arjungandhi521.github.io
 
-If you would like to to see the current Jupyter Notebook, its in the root of this repository and is called <code>climate.ipynb</code>.
+If you would like to to see the current Jupyter Notebook, its in the root of this repository and is called <code>Climate Change on Twitter.ipynb</code>.
 
 # Data Set
 Current sample of tweets (200K): http://tweetsets.library.gwu.edu/dataset/4be91df6
