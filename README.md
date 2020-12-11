@@ -1,6 +1,8 @@
-# arjungandhi521.github.io: CMSC320 Final Project The Tide of Climate on Twitter: Twitter Climate Change Sentiment Analysis
+# arjungandhi521.github.io: 
+CMSC320 Final Project-
+Twitter's Climate Tide: An Analysis of Sentiment Towards Climate Change on Twitter by Arjun Gandhi
 
-VIEW THE JUPYTER NOTEBOOK HERE
+Please go to this link to see the Jupyter Notebook right now (soon to be at arjungandhi521.github.io)
 https://github.com/arjungandhi521/arjungandhi521.github.io/blob/main/climate.ipynb
 
 # Data Set
