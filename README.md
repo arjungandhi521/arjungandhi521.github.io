@@ -1,7 +1,8 @@
 # arjungandhi521.github.io:
 CMSC320 Final Project: Twitter's Climate Tide by Arjun Gandhi
 
-You can go here to view this project without needing to run anything: arjungandhi521.github.io
+You can go here to view this project without needing to run anything: 
+arjungandhi521.github.io 
 
 If you would like to to see the current Jupyter Notebook, its in the root of this repository and is called <code>Climate Change on Twitter.ipynb</code>.
 
