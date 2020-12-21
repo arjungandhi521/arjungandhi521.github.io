@@ -13077,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="-Twitter's-Climate-Tide:-An-Analysis-of-Tweets-About-Climate-Change-"><center> Twitter's Climate Tide: An Analysis of Tweets About Climate Change </center><a class="anchor-link" href="#-Twitter's-Climate-Tide:-An-Analysis-of-Tweets-About-Climate-Change-">&#182;</a></h1><h2 id="-By-Arjun-Gandhi-"><center> By Arjun Gandhi </center><a class="anchor-link" href="#-By-Arjun-Gandhi-">&#182;</a></h2><h2 id="-December-20,-2020-"><center> December 20, 2020 </center><a class="anchor-link" href="#-December-20,-2020-">&#182;</a></h2>
+<h1 id="-Twitter's-Climate-Tide:-An-Analysis-of-Tweets-About-Climate-Change-"><center> Twitter's Climate Tide: An Analysis of Tweets About Climate Change </center><a class="anchor-link" href="#-Twitter's-Climate-Tide:-An-Analysis-of-Tweets-About-Climate-Change-">&#182;</a></h1><h2 id="-By-Arjun-Gandhi-"><center> By Arjun Gandhi </center><a class="anchor-link" href="#-By-Arjun-Gandhi-">&#182;</a></h2><h2 id="-December-21,-2020-"><center> December 21, 2020 </center><a class="anchor-link" href="#-December-21,-2020-">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13189,7 +13189,7 @@ div#notebook {
 <p>Here is a link to my exact sample: <a href="http://tweetsets.library.gwu.edu/dataset/723265b8">http://tweetsets.library.gwu.edu/dataset/723265b8</a>. You can also see my sample in the form of the tweet ids in my GitHub repo: <a href="https://github.com/arjungandhi521/arjungandhi521.github.io/blob/main/public_data/tweet_ids_125k.txt">arjungandhi521/arjungandhi521.github.io/public_data/tweets_ids_125k.txt</a>.</p>
 <p>I sampled 125,000 of the 40 million tweets. The CSV I use directly below is private because of Twitter policy that one should not publish large amounts of tweets but that people in academics and such can go ahead and publish the tweet ids. As stated in the GWU link the data is from betewen September 21, 2017 and May 17, 2019 and they had a gap in data collection from January 7, 2019 to April 17, 2019.</p>
 <p>I chose to exclude retweets and this sample ranges from late 2017 to mid-2019 which is the full collection time. I excluded retweets because even though a tweet with 1 billion RTs may have high influence on Twitter, having it n times in the dataset is not really going to add to my understanding of the language. I still have access to the favorites and retweets data which I will use later on.</p>
-<p>To convert each tweet ID into the actual tweet data I am using Hydrator (Hydrator [Computer Software]. Retrieved from <a href="https://github.com/docnow/hydrator">https://github.com/docnow/hydrator</a>). From the above repo, I downloaded <a href="https://github.com/DocNow/hydrator/releases/tag/v0.0.13">version 0.0.13 of the app</a>. I made a Twitter account to connect my account this Hydrator. When you download the sample just pick to download tweet ids. This will be a compressed .txt file. Just unzip it and then upload the file into Hydrator under "Datasets" in the desktop app. Then hit "Add Dataset" and then "Start" and then when its done you can click CSV to get the JSONL as a CSV. When I hydrated the tweets (turned them from tweet ids into tweets you see below), I started with 125,000 ids but the data frame directly below has less. This is for several reasons including people making their accounts private and deleted tweets and accounts. These tweet ids were put into the data set before these thing happend.</p>
+<p>To convert each tweet ID into the actual tweet data I am using Hydrator (Hydrator [Computer Software]. Retrieved from <a href="https://github.com/docnow/hydrator">https://github.com/docnow/hydrator</a>). From this repo, I downloaded <a href="https://github.com/DocNow/hydrator/releases/tag/v0.0.13">version 0.0.13 of the app</a>. I made a Twitter account to connect my account this Hydrator. When you download the sample just pick to download tweet ids or use the tweet ids in my repo. This will be a compressed .txt file (if you get it from GWU). Just unzip it and then upload the file into Hydrator under "Datasets" in the desktop app. Then hit "Add Dataset" and then "Start" and then when its done you can click CSV to get the JSONL as a CSV. When I hydrated the tweets (turned them from tweet ids into tweets you see below), I started with 125,000 ids but the data frame directly below has less. This is for several reasons including people making their accounts private and deleted tweets and accounts. These tweet ids were put into the data set before these thing happend.</p>
 
 </div>
 </div>
@@ -13539,7 +13539,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, there are many columns. Most of these won't help me so many will have to go. Others need some fixing up to be useful like the date and time string need to be date objects.</p>
+<p>As you can see, there are many columns. Most of these won't help me so many will have to go. Others need some fixing up to be useful like the date and time strings need to be date objects.</p>
 
 </div>
 </div>
@@ -14002,7 +14002,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Prepare-the-tweets-for-sentiment-analysis">Prepare the tweets for sentiment analysis<a class="anchor-link" href="#Prepare-the-tweets-for-sentiment-analysis">&#182;</a></h2><h3 id="Remove-links">Remove links<a class="anchor-link" href="#Remove-links">&#182;</a></h3><p>Links do not add meaning to a tweet when analyzing their sentiment and visualizing what people say so they are just texual clutter and thus we will delete them with the magic of regular expressions!</p>
+<h2 id="Prepare-the-tweets-for-sentiment-analysis">Prepare the tweets for sentiment analysis<a class="anchor-link" href="#Prepare-the-tweets-for-sentiment-analysis">&#182;</a></h2><h3 id="Remove-links">Remove links<a class="anchor-link" href="#Remove-links">&#182;</a></h3><p>Links do not add meaning to a tweet when analyzing their sentiment and visualizing what words people say so they are just texual clutter and thus we will delete them with the magic of regular expressions!</p>
 
 </div>
 </div>
@@ -14629,10 +14629,12 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;tweet_count&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># make a df of month/year and tweet counts</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">,</span> <span class="s1">&#39;tweet_count&#39;</span><span class="p">])</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dates</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;tweet_count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
 
+<span class="c1"># visualize the df  with sns</span>
 <span class="n">dims</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;tweet_count&#39;</span><span class="p">])</span>
@@ -14669,7 +14671,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see there were several time periods where the frequency of tweeting about climate was a bit higher than others. December 2017 is particularlly high so I will look into that more below. I Though, we can see that for the most part, people tweet a good amount about climate throughout the year and there really isn't one obvious patter that we can learn from this graph.</p>
+<p>As you can see there were several time periods where the frequency of tweeting about climate was a bit higher than others. December 2017 is particularlly high so I will look into that more below. Though, we can see that for the most part, people tweet a good amount about climate throughout the year and there really isn't one obvious pattern that we can learn from this graph.</p>
 
 </div>
 </div>
@@ -14677,7 +14679,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bag-of-Words-and-Word-Clouds">Bag of Words and Word Clouds<a class="anchor-link" href="#Bag-of-Words-and-Word-Clouds">&#182;</a></h2><p>First off, I will convert dataframes of tweets in to bags of words representations. What that basically means is I look at a set of tweets and then will make a matrix representation of these tweets as one. So every possible word in all the tweets will be the columns and the tweet ids will be my rows. Each row is a tweet. Every word in all the tweets gets a column. If tweet #10 has the word "java" 10 times then it will have a ten in its "java" column, if it has "cowgirl" 0 times than it has a 0 the "cowgirl" column. Most cells will be 0 because there are LOTS of columns but only so many words one uses in any single tweet. I will then use these bags of words to make word clouds which will represent the bag of words with words on an image where the more a word is used, the bigger it is.</p>
+<h2 id="Bag-of-Words-and-Word-Clouds">Bag of Words and Word Clouds<a class="anchor-link" href="#Bag-of-Words-and-Word-Clouds">&#182;</a></h2><p>First off, I will convert dataframes of tweets in to bags of words representations. What that basically means is I look at a set of tweets and then will make a matrix representation of these tweets as one. So every possible word in all the tweets will be the columns and the tweet ids will be my rows. Each row is a tweet. Every word in all the tweets gets a column. If tweet #10 has the word "java" 10 times then it will have a ten in its "java" column, if it has "cowgirl" 0 times than it has a 0 the "cowgirl" column. Most cells will be 0 because there are LOTS of columns but only so many words one uses in any single tweet. I will then use these bags of words to make word clouds which will represent the bag of words with words on an image where the more a word is used, the bigger it is. You may find this explanation of bag of words a bit more helpful so feel free to check it out for clarification: <a href="https://en.wikipedia.org/wiki/Bag-of-words_model">https://en.wikipedia.org/wiki/Bag-of-words_model</a>.</p>
 
 </div>
 </div>
@@ -14697,7 +14699,7 @@ div#notebook {
 <span class="c1"># Object to vectorize words into a bag of words</span>
 <span class="n">cv</span><span class="o">=</span><span class="n">CountVectorizer</span><span class="p">(</span><span class="n">analyzer</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">)</span>
 
-<span class="c1"># add a column with the text of each tweet as one string</span>
+<span class="c1"># add a column with the text of each tweet as one string (tokens merged together)</span>
 <span class="n">tweets</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="n">tweets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;tokens&quot;</span><span class="p">]))</span>
@@ -15077,7 +15079,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Words dominated like need, people, and world. To a lesser degree, enviroment as well. Need may have been used with the term climate action but these words aren't one obvious sentiment without context.</p>
+<p>Words dominated like need, people, and world. To a lesser degree, enviroment as well. These words aren't ones with obvious sentiment without context. The words dominating cannot really tell us much of the content of the wtweets here. Again, President Trump was a common word in the tweets.</p>
 
 </div>
 </div>
@@ -15132,7 +15134,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Many of the most used words are not really positive or negative towards climate. People and need are again predominant.</p>
+<p>Many of the most used words are not really positive or negative towards climate. People and need are again predominant. Like could be used a vaiety of contexts so I cannot guess what context it was used in easily. When looking at this word cloud recall I have limited data for 2019.</p>
 
 </div>
 </div>
@@ -15265,7 +15267,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This month had many mentions of Trump, with him being the most common term. There was also lots of negative words like f*ck, dumb, and idiot. While curse words are often associated with negative sentiment, it is known that curse words do not always indicate this when talking about climate as many climate tweets are angry but also positive towards climate.</p>
+<p>This month had many mentions of Trump, with him being the most common term. There was also lots of negative words that include the f word, dumb, and idiot. While curse words are often associated with negative sentiment, it is known that curse words do not always indicate this when talking about climate as many climate tweets are angry but also positive towards climate.</p>
 
 </div>
 </div>
@@ -15283,7 +15285,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;tweet_length&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;tokens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">tokens</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use lambda function to get length</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;tweet_length&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;tokens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">tokens</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">))</span>
+
+<span class="c1"># plot the lengths for each each</span>
 <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;tweet_length&#39;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Normalized Length of Tweet&quot;</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Year&quot;</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Length&quot;</span><span class="p">)</span>
 
@@ -15331,7 +15336,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Are-we-just-seeing-a-few-dominant-voices-on-Twitter?">Are we just seeing a few dominant voices on Twitter?<a class="anchor-link" href="#Are-we-just-seeing-a-few-dominant-voices-on-Twitter?">&#182;</a></h2><p>Lets look at the distribution of tweet count about climate to see if these most of these tweets are coming from a few tweeters.</p>
+<h2 id="Are-we-just-seeing-a-few-dominant-voices-on-Twitter?">Are we just seeing a few dominant voices on Twitter?<a class="anchor-link" href="#Are-we-just-seeing-a-few-dominant-voices-on-Twitter?">&#182;</a></h2><p>Lets look at a distribution of who is tweeting to see if its a few dominant voices or the masses crying on Twitter.</p>
 
 </div>
 </div>
@@ -15434,7 +15439,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Assign-each-tweet-an-overall-sentiment-score">Assign each tweet an overall sentiment score<a class="anchor-link" href="#Assign-each-tweet-an-overall-sentiment-score">&#182;</a></h3><p>Here I am using VADER and its compound sentiment analysis scoring. The compound score combines the fraction of its neutral, positive, and negative sentiment into one sentiment score. The compound score will be between -1 (very negative) and +1 (very positive). You can read more about this in the read me of their repository on GitHub <a href="https://github.com/cjhutto/vaderSentiment#about-the-scoring">here</a>. According to this <a href="https://neptune.ai/blog/sentiment-analysis-python-textblob-vs-vader-vs-flair">article</a>, VADER is ideal for analyzing sentiment on social media data and gets good results when using this sort of data.</p>
+<h3 id="Assign-each-tweet-an-overall-sentiment-score">Assign each tweet an overall sentiment score<a class="anchor-link" href="#Assign-each-tweet-an-overall-sentiment-score">&#182;</a></h3><p>Here I am using VADER and its compound sentiment analysis scoring. The compound score combines the fraction of its neutral, positive, and negative sentiment into one sentiment score. The compound score will be between -1 (very negative) and +1 (very positive). You can read more about this in the read me of their repository on GitHub <a href="https://github.com/cjhutto/vaderSentiment#about-the-scoring">here</a>. According to this <a href="https://neptune.ai/blog/sentiment-analysis-python-textblob-vs-vader-vs-flair">article</a>, VADER is ideal for analyzing sentiment on social media data and gets good results when using this sort of data. I orginally intended to use TextBlob but this article convinced me that VADER was my best option to use for social data.</p>
 
 </div>
 </div>
@@ -15696,8 +15701,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So a couple of things are goin on here. Looking at all the data, most tweets are positive in sentiment towards climate change but its no majority. Also, a fair amount of tweets are labeled as neutral but its about half as many compared with the positive sentiment tweets.</p>
-<p>In regards to the bottom graph that looked at the top 1,000 most interacted with tweets (i.e. sum of retweets and favorites), they were a good bit more negative that the full data set by about 5% and they were less neutral. Though, the positive percentage is basically the same for all tweets and the most interacted with ones. One could may make an assumption that more polarzing or negative tweets are more negative but I am not sure we have the full evidence for that here since this was a pretrained model. Though I think we could make an educated guess that it may be the case that more negative tweets get more attention than neutral tweets. This is what one should expect with a polarizing topic online.</p>
+<p>So a couple of things are going on here. Looking at all the data, most tweets are positive in sentiment towards climate change but its no majority! Also, a fair amount of tweets are labeled as neutral but its about half as many compared with the positive sentiment tweets.</p>
+<p>In regards to the bottom graph that looked at the top 1,000 most interacted with tweets (i.e. sum of retweets and favorites), they were a good bit more negative that the full data set by about 5% and they were less neutral. Though, the positive percentage is basically the same for all tweets and the most interacted with ones. One could may make an assumption that more polarzing or negative tweets are more negative but I am not sure we have the full evidence for that here since this was a pretrained model. Though I think we could make an educated guess that it may be the case that more negative tweets get more attention than neutral tweets. This is what one should expect with a polarizing topic online. I just would be hesitant to call this a causation without further analysis on this.</p>
 
 </div>
 </div>
@@ -15778,6 +15783,7 @@ div#notebook {
 <span class="n">nov2017</span> <span class="o">=</span> <span class="n">seventeen</span><span class="p">[</span><span class="n">seventeen</span><span class="p">[</span><span class="s2">&quot;date_tweeted&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">nov2017_start</span><span class="p">]</span>
 <span class="n">nov2017</span> <span class="o">=</span> <span class="n">seventeen</span><span class="p">[</span><span class="n">seventeen</span><span class="p">[</span><span class="s2">&quot;date_tweeted&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">dec2017_start</span><span class="p">]</span>
 
+<span class="c1"># only one line as no months in 2017 after dec</span>
 <span class="n">dec2017</span> <span class="o">=</span> <span class="n">seventeen</span><span class="p">[</span><span class="n">seventeen</span><span class="p">[</span><span class="s2">&quot;date_tweeted&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">dec2017_start</span><span class="p">]</span>
 
 <span class="c1"># list of dfs for each month</span>
@@ -15971,7 +15977,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dims</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot it with seaborn</span>
+<span class="n">dims</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Sentiment Distribution 2017-2018&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Proportion of Tweets w/ Given Sentiment&quot;</span><span class="p">)</span> 
@@ -16022,8 +16029,10 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For the proportion of tweets that are positive, after 12/2017, the proportion of positive tweets goes up and stays very stable until 8/2018. Overall there is not a major change from 10/17 to 12/18 in this proportion.</p>
-<p>For the negative line, it goes up in 12/2017 (recall thats the time with the most tweets) and drops over the next 3 months and then gets close to back where it was over the course of 2018. This proportion also does not change dramatically in the long run though it does change by 10% in 3 months at one point which is pretty interesting. This means that over 3 months there was 10% less negative tweets about climate change but it all goes back up (though not all the way) over time.</p>
+<p>For the negative line, it goes up in 12/2017 (recall thats the time with the most tweets) and drops over the next 3 months and then gets close to back where it was over the course of 2018.</p>
+<p>This proportion also does not change dramatically in the long run though it does change by 10% in 3 months at one point which is pretty interesting. This means that over 3 months there was 10% less negative tweets about climate change but it all goes back up (though not all the way) over time.</p>
 <p>For the neutral line, nothing much of interest happens. It more or less does not change. This proportion sort of zip zags in the start and then is pretty stable for most of 2018.</p>
+<p>So in summary, we saw one major shift in early 2018 where positivity rose, negativity lessened, and there was no clear trend then in neutrality.</p>
 
 </div>
 </div>
@@ -16039,7 +16048,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Designate-training-data-and-tranform-documents-into-feature-vectors">Designate training data and tranform documents into feature vectors<a class="anchor-link" href="#Designate-training-data-and-tranform-documents-into-feature-vectors">&#182;</a></h3><p>Here we will transform documents (tweets) into feature vectors where a vector for a tweet contains the number of times each word is used. Its a dictionary of word to word count.</p>
+<h3 id="Designate-training-data-and-tranform-documents-into-feature-vectors">Designate training data and tranform documents into feature vectors<a class="anchor-link" href="#Designate-training-data-and-tranform-documents-into-feature-vectors">&#182;</a></h3><p>Here we will transform documents (tweets) into feature vectors where a vector for a tweet contains the number of times each word is used. Its a dictionary of word to word count. You can find the count vectorizer documentation here: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html">https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html</a>.</p>
 
 </div>
 </div>
@@ -16145,7 +16154,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a df of test data that is not in training data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Build a df of test data (20% of data df)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">training_data</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 <span class="n">X_test</span><span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;tweet&quot;</span><span class="p">]</span>
 <span class="n">y_test</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sentiment_label&quot;</span><span class="p">]</span>
@@ -16274,7 +16283,7 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>That is not too bad. But its not much better than a 50/50 guess. It is a quick prediction time though. I would like to see if we can do any better. Next I will be trying this same classification problem out with a random forest classification, into the woods we go!</p>
+<p>That is not too bad. But its not much better than a 50/50 guess. It is a quick prediction time though. This is partly because we are using a pretty simple learner and not optimizing it very far. I would like to see if we can do any better. Next I will be trying this same classification problem out with a random forest classification, into the woods we go!</p>
 
 </div>
 </div>
@@ -16293,8 +16302,8 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 <div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use sklearn&#39;s Pipline class to classify tweets with a random forest</span>
-<span class="n">text_clf</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use sklearn&#39;s Pipline class to classify tweets with a random forest and use same methods as before</span>
+<span class="n">text_clf</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span> 
      <span class="p">(</span><span class="s1">&#39;vect&#39;</span><span class="p">,</span> <span class="n">CountVectorizer</span><span class="p">()),</span>
      <span class="p">(</span><span class="s1">&#39;tfidf&#39;</span><span class="p">,</span> <span class="n">TfidfTransformer</span><span class="p">()),</span>
      <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span> <span class="n">RandomForestClassifier</span><span class="p">()),</span>
@@ -16393,7 +16402,7 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Though sklearn does not reccomend Random Forest Classifiers for text to start off, it can still be used and concepetually is pretty simple and can do an even better job than Naive Bayes. This can still be improved on likely though. One of the best options for text classification is SVM so that is what we will try out next.</p>
+<p>This is 17% more accurate of a prediction! Though sklearn does not reccomend Random Forest Classifiers for text to start off, it can still be used and concepetually is pretty simple and can do an even better job than Naive Bayes. This can still be improved on likely though. One of the best options for text classification is SVM so that is what we will try out next.</p>
 
 </div>
 </div>
@@ -16462,7 +16471,7 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is great! I don't think I will get much better than this but this is a good improvement. The real drawback though is that SVM can take a while to run and is a tad more complex to understand. Forests and their democracy are just so simple and quick but SVM does a slight better job in prediction accuracy.</p>
+<p>This is great, we are now getting it right 9/10 times, a sligth improvement from Random Forests! I don't think I will get much better than this but this is a good improvement. The real drawback though is that SVM can take a while to run and is a tad more complex to understand. Forests and their democracy are just so simple and quick but SVM does a slight better job in prediction accuracy.</p>
 
 </div>
 </div>
@@ -16480,10 +16489,11 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Graphically compare the performance of the classifiers</span>
+<span class="c1"># assemble scores </span>
 <span class="n">learners</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Naive Bayes&#39;</span><span class="p">,</span> <span class="s1">&#39;Random Forest&#39;</span><span class="p">,</span> <span class="s1">&#39;SVM&#39;</span><span class="p">]</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">naive_bayes_score</span><span class="p">,</span><span class="n">forest_accuracy</span><span class="p">,</span><span class="n">svm_score</span><span class="p">]</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">learners</span><span class="p">,</span><span class="n">scores</span><span class="p">)),</span><span class="n">columns</span> <span class="o">=</span><span class="p">[</span><span class="s2">&quot;learners&quot;</span><span class="p">,</span> <span class="s2">&quot;scores&quot;</span><span class="p">])</span> 
-
+<span class="c1"># plot</span>
 <span class="n">plot</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;learners&quot;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;scores&quot;</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Accuracy of Classification Algorithms&quot;</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Classifier&quot;</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Accuracy Score&quot;</span><span class="p">)</span>
 <span class="n">plot</span>
@@ -16541,11 +16551,12 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="-Insight-and-Conclusions-"><center> Insight and Conclusions </center><a class="anchor-link" href="#-Insight-and-Conclusions-">&#182;</a></h1><p>I will be wrapping up by bringing together what I learned from this analysis.</p>
-<p>1) To some degree, the most popular tweets are more polarizing (as in less neutral) than when looking at all tweets. The popular tweets were 5% more negative than all the data and 5% less neutral. This was not a real suprise to me but it was interesting that this is there are lots of neutral tweets that are still very much liked and retweeted.</p>
-<p>2) There is not an overwheling majority of tweets that go positive or negative. No category of neutral/positive/negative is a majority of tweets based on our sample. The closest we got to a majority was 43% of tweets being positive.</p>
-<p>3) The most popular tweets are all saying the same things that the average person's tweet's say. The word cloud for the top 1000 most interacted with tweets showed that the words the most known faces on Twitter are not using language different from you and I. Their sentiment is not even that different though I address this some in (1).</p>
-<p>4) The majority of the tweets about climate come from no few people but from the masses. We saw this in the last plot right before sentiment analysis and ML. Nearly every tweeter tweets very little about climate change and only a few select people tweet about climate in high volume.</p>
-<p>5) The proportion of tweets that have any given sentiment really does not change (see Sentiment Distribution 2017-2018). There is a slight shift in the proportion of negative tweets downards in early 2018 by 10% but otherwise there really are not any major shifts. These shifts correct over time. After looking at the a <a href="https://www.washingtonpost.com/weather/2018/12/31/five-most-extreme-weather-events-united-states/">summary of 2018 in climate change by the Washington Post</a>, the only possible cause could have been extreme winter weather in the US during early 2018 but we have no evidence to call this causation. At the moment I have only noticed a correlation with extreme winter and lower amounts of negative tweets about climate change. One of the goals was to see if we could find major shifts in sentiment over time but overall it looks like sentiment is pretty constant other than this one shift away from negativity. In any given pair of months the proportion of positive or negative or neutral tweets is not changing by much with the exception of early 2018 seeing a decline in the proportion of negative tweets.</p>
+<p>1) To some degree, the most popular tweets are more polarizing (as in less neutral) than when looking at all tweets. The popular tweets were 5% more negative than all the data and 5% less neutral. This was not a real suprise to me but it was interesting that this is there are lots of neutral tweets that are still very much liked and retweeted. (See Sentiment Analysis section.)</p>
+<p>2) There is not an overwheling majority of tweets that go positive or negative. No category of neutral/positive/negative is a majority of tweets based on our sample. The closest we got to a majority was 43% of tweets being positive. (See Sentiment Analysis section.)</p>
+<p>3) The most popular tweets are all saying the same things that the average person's tweet's say. The word cloud for the top 1000 most interacted with tweets showed that the words the most known faces on Twitter are not using language different from you and I. Their sentiment is not even that different though I address this some in (1). (See BOW and Wordclouds section.)</p>
+<p>4) The majority of the tweets about climate come from no few people but from the masses. We saw this in the last plot right before sentiment analysis and ML. Nearly every tweeter tweets very little about climate change and only a few select people tweet about climate in high volume. (See Are we just seeing a few dominant voices on Twitter?)</p>
+<p>5) The proportion of tweets that have any given sentiment had few changed (see Sentiment Distribution 2017-2018). There is a noticable shift in the proportion of negative tweets downards in early 2018 by 10%  but otherwise there really are not any major shifts. At this time the positive proportion went up and neutrality had no clear trend.  These shifts correct over time more or less. After looking at the a <a href="https://www.washingtonpost.com/weather/2018/12/31/five-most-extreme-weather-events-united-states/">summary of 2018 in climate change by the Washington Post</a>, the only possible cause could have been extreme winter weather in the US during early 2018 but we have no evidence to call this causation. At the moment I have only noticed a correlation with extreme winter and lower amounts of negative tweets about climate change. One of the goals was to see if we could find major shifts in sentiment over time. We found one trend in early 2018 but no long term trends.</p>
+<p>6) There are several reasons why we could have not found long term shifts in sentiment. One, there is no longer term changes to find. Two, the pretrained sentiment analyzer was not up to the task of understanding climate change tweets. Three, we could have used too small a sample. Four, we needed to look at a longer time frame. Five, it may have been some other flaw in how I chose to analyze the information I collected.</p>
 
 </div>
 </div>
@@ -16553,8 +16564,9 @@ Negative: barackobama tweets day climate change tweet terror attack muslim mania
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="-Acknowledgements-"><center> Acknowledgements </center><a class="anchor-link" href="#-Acknowledgements-">&#182;</a></h1><p>I would like to thank the George Washington University's TweetSets website and organization for their data set on climate change on Twitter. Their data and website to sample the data set made this project so much easier. Once again all of their data sets from Twitter can be found right <a href="https://tweetsets.library.gwu.edu">here</a>.</p>
-<p>I would also like to thank the UMD Professor John Dickerson and the CMSC320 instructional staff for their help and advice while working on this project.</p>
+<h1 id="-Acknowledgements-"><center> Acknowledgements </center><a class="anchor-link" href="#-Acknowledgements-">&#182;</a></h1><p>Thank you so much for taking your time to read this analysis!</p>
+<p>I would like to thank the George Washington University's TweetSets organization for their data set on climate change on Twitter. Their data and website to sample the data set made this project so much easier. Once again all of their data sets from Twitter can be found right <a href="https://tweetsets.library.gwu.edu">here</a>.</p>
+<p>I would also like to thank University of Maryland Professor John Dickerson and the CMSC320 instructional staff for their help and advice while working on this project.</p>
 
 </div>
 </div>
